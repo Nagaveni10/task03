@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function titleCase(string) {
+            var sentence = string.toLowerCase().split(" ");
+            for (var i = 0; i < sentence.length; i++) {
+                sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+            }
+            var sen = sentence.join(" ");
+            console.log(sen);
+        }
+        titleCase("harappan civilization is one of the oldest in the world");
+    </script>
+</body>
+
+</html>
